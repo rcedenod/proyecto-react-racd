@@ -1,0 +1,104 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #f0fff0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-form div {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #004d00; 
+}
+
+.login-form input {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #99cc99;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.login-form p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-form button[type="button"] {
+  background: none;
+  border: none;
+  color: #006600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-form.dark {
+  background-color: #2d2d2d;
+}
+
+.login-form.dark label {
+  color: white;
+}
+
+.login-form.dark input {
+  border: 1px solid #4d4d4d; 
+  background-color: #2d2d2d; 
+  color: white; 
+}
+
+.login-form.dark input::placeholder {
+  color: #cccccc;
+}
+
+.login-form.dark button[type="submit"] {
+  background-color: #666;
+}
+
+.login-form.dark button[type="submit"]:hover {
+  background-color: #777;
+}
+
+.login-form.dark button[type="button"] {
+  color: white;
+}

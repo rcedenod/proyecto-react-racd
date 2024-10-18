@@ -1,0 +1,128 @@
+.note-viewer {
+  width: 80%;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0fff0;
+  border: 1px solid #99cc99;
+}
+
+.note-title {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #99cc99;
+  background-color: #f0fff0;
+}
+
+.note-content {
+  font-family: Arial;
+}
+
+.message-viewer {
+  position: absolute;
+  top: 50%; 
+  left: 65%; 
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  width: 74.3%; 
+  margin: 0; 
+  border-radius: 8px; 
+  background-color: #cff3cf;
+}
+
+.note-footer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.note-date {
+  font-size: 12px;
+  color: #666666; 
+}
+
+.trash-icon-viewer {
+  color: #cc0000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.trash-icon-viewer:hover {
+  color: #990000;
+}
+
+.note-viewer.gallery {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.note-viewer.gallery .note {
+  background-color: #e9f7e9;
+  padding: 15px;
+  border: 1px solid #99cc99;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.note-viewer.gallery .note:hover {
+  transform: scale(1.05);
+}
+
+.note-viewer.gallery .note h3 {
+  margin: 0 0 10px 0; 
+  color: #004d00;
+}
+
+.note-viewer.gallery .note p {
+  margin: 0; 
+  color: #333; 
+}
+
+.note-viewer.dark {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  border: 1px solid #4d4d4d;
+}
+
+.note-title.dark {
+  border: 1px solid #4d4d4d;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.note-footer .note-date.dark {
+  color: #cccccc; 
+}
+
+.message-viewer.dark {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+  width: 74.55%;
+  margin: 0; 
+  border-radius: 8px;
+  background-color: #2d2d2d; 
+}
+
+.note-content.dark {
+  color: white;
+  background-color: #2d2d2d;
+  font-family: Arial;
+}
+

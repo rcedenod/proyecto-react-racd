@@ -1,0 +1,169 @@
+
+.app-container.light {
+  background-color: #cff3cf; /
+}
+
+.app-container.light .sidebar {
+  background-color: #cff3cf;
+}
+
+.app-container.light .note-viewer {
+  background-color: #cff3cf; 
+}
+
+.app-container.light {
+  color: #004d00; 
+}
+
+.app-container.light button {
+  background-color: #4caf50; 
+}
+
+.app-container.light button:hover {
+  background-color: #45a049;
+}
+
+.app-container.dark {
+  background-color: #1c1c1c; 
+}
+
+.app-container.dark .sidebar {
+  background-color: #1c1c1c;
+}
+
+.app-container.dark .note-viewer {
+  background-color: #1c1c1c;
+}
+
+.app-container.dark {
+  color: #f9fff9; 
+}
+
+.app-container.dark button {
+  background-color: #666;
+}
+
+.app-container.dark button:hover {
+  background-color: #777;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1; 
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 26.4%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; 
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  color: #004d00; 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  background-color: #e9f7e9;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #e0f7e0;
+}
+
+.note-viewer h2 {
+  margin-top: 0;
+  color: #004d00;
+}
+
+button {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-viewer {
+  width: 69.5%;
+  padding: 20px;
+  overflow-y: auto;
+  position: fixed;
+  left: 27.7%;
+  height: 95%;
+}
+
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #99cc99;
+  background-color: #f0fff0;
+}
+
+textarea {
+  height: 200px; 
+  resize: none;
+}
+
+.sidebar.dark h2 {
+  color: #f9fff9;
+}
+
+.sidebar.dark li {
+  background-color: #2d2d2d; 
+}
+
+.sidebar.dark li:hover {
+  background-color: #3a3a3a;
+}
+
+.note-viewer.dark h2 {
+  color: #f9fff9; 
+}
+
+.note-viewer.dark {
+  color: white;
+}
+
+input.dark,
+textarea.dark {
+  border: 1px solid #444;
+  background-color: #2d2d2d; 
+  color: white
+}
